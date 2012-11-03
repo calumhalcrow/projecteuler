@@ -3,7 +3,7 @@
 import sys
 
 def prime_factors(of):
-    upto = int(of**0.5)
+    upto = int(of**0.5)+1
     factors = []
 
     for i in range(2, upto, 1):
