@@ -1,4 +1,6 @@
+#!/usr/bin/python
 
+import sys
 
 def prime_factors(of):
     upto = int(of**0.5)
@@ -28,6 +30,6 @@ def is_prime(i):
                 return False
     return True
 
-primeFactors = prime_factors(600851475143)
+primeFactors = prime_factors(int(sys.argv[1]))
 primeFactors.sort(key=int)
 print ', '.join(primeFactors)
